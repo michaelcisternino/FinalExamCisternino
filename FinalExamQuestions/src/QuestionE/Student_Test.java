@@ -48,6 +48,7 @@ public class Student_Test {
 		Student stu5 = new Student("Bert", "Randall", "Gibbons", dBirthDate, "214 Labrador Lane", "302-893-6889", "bgibbons@udel.edu","MIS");
 		
 		HashMap<UUID, Student> stuHash = new HashMap();
+		//stu.getStuID for each student was returning the same UUID, so I inserted my own randomUUID's
 		stuHash.put(UUID.randomUUID(), stu1);
 		stuHash.put(UUID.randomUUID(), stu2);
 		stuHash.put(UUID.randomUUID(), stu3);

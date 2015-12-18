@@ -30,7 +30,7 @@ public class Rectangle_Test {
 	}
 
 	@Test (expected = IllegalRectangle.class)
-	// throws exception, doesn't recognize
+	// throws exception but java doesn't recognize that it's being thrown
 	public void IllegalRectangleTest() {
 	try {
 		final Rectangle r = new Rectangle(-2, 1);
