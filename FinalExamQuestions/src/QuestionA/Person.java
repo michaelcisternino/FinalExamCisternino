@@ -6,7 +6,7 @@ import java.util.Date;
 /*
  * comment
  */
-public abstract class Person {
+public abstract class Person implements iPersonRead, iPersonReadWrite{
 
 	private Date DOB;
 	private String FirstName;
@@ -17,7 +17,7 @@ public abstract class Person {
 	private String email_address;
 
 	public String getFirstName() {
-		return FirstName;
+		return this.FirstName;
 	}
 
 	public void setFirstName(String FirstName) {
